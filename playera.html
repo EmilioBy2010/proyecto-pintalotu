@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playera</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+    <a href="index.html">
+        <img src="img/pntlt.png" class="header__logo" alt="logo">
+    </a>
+
+    <div class="burger">
+        <span></span>
+    </div>
+
+    
+    <nav class="main-nav">
+        <ul class="nav__list">
+            <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Quienes somos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">Contactanos</a>
+                </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Producto -->
+
+<div class="container py-5">
+
+    <div class="row">
+
+        <!-- Imagen -->
+
+        <div class="col-lg-6">
+
+            <img src="img/playera.png" class="card-img-top" alt="Producto 1">
+
+        </div>
+
+        <!-- Información -->
+
+        <div class="col-lg-6">
+
+            <h2 class="text-success mb-4">
+                Playera
+            </h2>
+
+            <h2 class="text-success mb-4">
+                Q199.99
+            </h2>
+
+            <p class="lead">
+                Camisa para adulto con tu propio diseño.
+                Estampado en ambos lados.
+            </p>
+
+            <hr>
+
+            <!-- Cantidad -->
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Cantidad
+                </label>
+
+                <input type="number"
+                       class="form-control"
+                       value="1"
+                       min="1">
+
+            </div>
+
+            <!-- Color -->
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Color
+                </label>
+
+                <select class="form-select">
+
+                    <option>Negro</option>
+                    <option>Blanco</option>
+                    <option>Azul</option>
+                    <option>Rojo</option>
+
+                </select>
+
+            </div>
+
+            <!-- Botones -->
+
+            <div class="d-grid gap-2">
+
+                <button
+                    class="btn btn-success btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#comprarModal">
+
+                    Comprar ahora
+
+                </button>
+
+                <a href="productos.html"
+                   class="btn btn-outline-secondary">
+
+                    Volver a productos
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Especificaciones -->
+
+<section class="container mb-5">
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+
+            <h4 class="mb-0">
+                Especificaciones
+            </h4>
+
+        </div>
+
+        <div class="card-body">
+
+            <ul class="list-group">
+
+                <li class="list-group-item">
+                    📏 Tallas disponibles desde S hasta XXL! 
+                </li>
+
+                <li class="list-group-item">
+                    ✔ Garantía de 1 año
+                </li>
+
+                <li class="list-group-item">
+                    ✔ Envío a todo el país
+                </li>
+
+                <li class="list-group-item">
+                    ✔ Producto unico
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Modal -->
+
+<div class="modal fade"
+     id="comprarModal"
+     tabindex="-1">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header bg-success text-white">
+
+                <h5 class="modal-title">
+                    Compra realizada
+                </h5>
+
+                <button
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <p>
+                    ¡Gracias por tu compra!
+                </p>
+
+                <p>
+                    Este es un ejemplo del proceso de compra.
+                    Al ser productos personalizados,
+                    el proceso real es mediante un Google forms.
+                    
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button
+                    class="btn btn-success"
+                    data-bs-dismiss="modal">
+
+                    Aceptar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center py-4">
+
+    <div class="container">
+
+        © 2026 PintaloTu | Todos los derechos reservados.
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="main.js"></script>
+
+
+</body>
+</html>
